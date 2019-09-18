@@ -1,5 +1,5 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
+ <!-- <?print_r($arResult)?>  -->
 <?if (!empty($arResult)):?>
 <div class="menu popup-block">
 <ul id="">
@@ -34,6 +34,10 @@ foreach($arResult as $arItem):?>
 
 
 
+
+		<?endif?>
+		<?if ($arItem["PERMISSION"] == "D"):?>
+			<li><strike><a href="<?=$arItem["LINK"]?>" ><?=$arItem["TEXT"]?></a></strike></li>
 		<?endif?>
 
 	<?endif?>
