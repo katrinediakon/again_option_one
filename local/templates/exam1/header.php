@@ -25,7 +25,7 @@ IncludeTemplateLangFile(__FILE__);
 <title><?$APPLICATION->ShowTitle()?></title>
 </head>
 <body>
-<div id="wrap">
+<div class="wrap">
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <?$adr= $APPLICATION->GetCurPage();?>
         <header class="header">
@@ -83,8 +83,8 @@ IncludeTemplateLangFile(__FILE__);
               <div class="menu-block popup-wrap">
                   <a href="" class="btn-menu btn-toggle"></a>
                   <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"horizontal_menu", 
+	"bitrix:menu",
+	"horizontal_menu",
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left",
